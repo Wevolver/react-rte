@@ -32,7 +32,10 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "0.14.x || 15.x.x || 16.x.x",
+    "react-dom": "0.14.x || 15.x.x || 16.x.x"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",

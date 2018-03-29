@@ -22,8 +22,8 @@
 }
 
 .root > div:first-child > button {
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .root > div + div > button {
@@ -31,6 +31,6 @@
 }
 
 .root > div:last-child > button {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }

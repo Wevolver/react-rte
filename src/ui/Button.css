@@ -5,10 +5,9 @@
   height: 30px;
   line-height: 22px;
   box-sizing: border-box;
-  background: none #fdfdfd;
-  background: linear-gradient(to bottom, #fdfdfd 0%,#f6f7f8 100%);
-  border: 1px solid #999;
-  border-radius: 2px;
+  background: none transparent;
+  border: 1px solid #ccc;
+  border-radius: 0;
   color: #333;
   text-decoration: none;
   font-size: inherit;
@@ -20,6 +19,8 @@
 .root:disabled {
   cursor: not-allowed;
   background: none transparent;
+  color: #ddd;
+  border-color: #e6e8eb;
 }
 
 .root:disabled > * {

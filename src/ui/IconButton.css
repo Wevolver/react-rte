@@ -14,7 +14,7 @@
 
 .isActive {
   border: #333;
-  border-left-width: 1 !important;
+  border-left-width: 1px !important;
 }
 
 .icon-undo {

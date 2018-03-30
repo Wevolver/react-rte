@@ -13,7 +13,8 @@
 }
 
 .isActive {
-  border-color: #333;
+  border: #333;
+  border-left-width: 1 !important;
 }
 
 .icon-undo {

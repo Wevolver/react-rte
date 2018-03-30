@@ -44,17 +44,18 @@ export default class ImageSpan extends Component {
     const entity = this.props.contentState.getEntity(this.props.entityKey);
     const image = new Image();
     const {src} = entity.getData();
+    const parentWidth = this.refs.child.parentNode.clientWidth;
     image.src = src;
     image.onload = () => {
       if (width == null || height == null) {
         // TODO: isMounted?
-        this.setState({width: image.width, height: image.height});
+        this.setState({width: parentWidth, height: image.height * (parentWidth / image.width)});
         Entity.mergeData(
           this.props.entityKey,
           {
-            width: image.width,
+            width: parentWidth,
             height: image.height,
-            originalWidth: image.width,
+            originalWidth: parentWidth,
             originalHeight: image.height,
           }
         );
@@ -82,6 +83,7 @@ export default class ImageSpan extends Component {
 
     return (
       <span
+        ref="child"
         className={className}
         style={imageStyle}
         onClick={this._onClick}

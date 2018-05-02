@@ -4,3 +4,4 @@ _*
 /lib
 /node_modules
 .idea
+/dist
